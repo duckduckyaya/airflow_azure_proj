@@ -23,6 +23,7 @@ with DAG(
     description='Scrapes data using Docker container',
     schedule_interval=timedelta(hours=1),
 ) as dag:
+    
     start_dag = DummyOperator(
         task_id='start_dag'
         )
