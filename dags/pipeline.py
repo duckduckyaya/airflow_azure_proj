@@ -39,11 +39,11 @@ task_1 = DockerOperator(
     api_version='auto',
     auto_remove=True,
     # command="/bin/sleep 30",
-    docker_url="unix://var/run/docker.sock",
+    docker_url="x",
     network_mode="bridge",
     environment={
-        "AZURE_CONNECTION_STRING": os.getenv("DefaultEndpointsProtocol=https;AccountName=yayaz;AccountKey=YglLHtJxmf3/CTPj49pwpo0IjEjZNT9CcUfRuKq/jleb7hFn8Xsrgtw+RElDOfWC54HaqPD4dvcx+AStLQS58A==;EndpointSuffix=core.windows.net"),
-        "AZURE_CONTAINER_NAME": os.getenv("yayaz"),
+        "AZURE_CONNECTION_STRING": x,
+        "AZURE_CONTAINER_NAME": x,
     },
     dag=dag
 )
